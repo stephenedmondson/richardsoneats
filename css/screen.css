@@ -81,7 +81,36 @@ body {
   background-image: linear-gradient(to top right, #764BA2 0%, #667EEA 100%);
 }
 
-/* line 9, ../sass/_richardsoneats.sass */
+/* line 10, ../sass/_richardsoneats.sass */
+.header-container {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0;
+  padding-bottom: 0;
+}
+/* line 16, ../sass/_richardsoneats.sass */
+.header-container .card {
+  background-color: rgba(60, 56, 117, 0.45);
+}
+/* line 18, ../sass/_richardsoneats.sass */
+.header-container h1 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-family: "Ovo", serif;
+  line-height: 2.2rem;
+  color: white;
+}
+/* line 24, ../sass/_richardsoneats.sass */
+.header-container h1 a {
+  color: #FCCE3E;
+}
+/* line 26, ../sass/_richardsoneats.sass */
+.header-container h1 em {
+  font-style: italic;
+}
+
+/* line 30, ../sass/_richardsoneats.sass */
 .card-container {
   display: grid;
   padding: 5rem;
@@ -89,22 +118,22 @@ body {
   grid-gap: 2rem;
 }
 
-/* line 14, ../sass/_richardsoneats.sass */
+/* line 35, ../sass/_richardsoneats.sass */
 .card-link {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease;
 }
-/* line 18, ../sass/_richardsoneats.sass */
+/* line 39, ../sass/_richardsoneats.sass */
 .card-link .card {
   transition: all 0.3s ease;
 }
-/* line 20, ../sass/_richardsoneats.sass */
+/* line 41, ../sass/_richardsoneats.sass */
 .card-link .card:hover {
   box-shadow: 0 0 30px -6px #383554;
   transform: translateY(-3px);
 }
-/* line 23, ../sass/_richardsoneats.sass */
+/* line 44, ../sass/_richardsoneats.sass */
 .card-link .card:hover .pin img {
   height: 35px;
   width: 35px;
@@ -113,20 +142,20 @@ body {
   transition: all 0.4s ease;
 }
 
-/* line 31, ../sass/_richardsoneats.sass */
+/* line 52, ../sass/_richardsoneats.sass */
 .card {
   background: #FDFDFD;
   box-shadow: 0 0 34px -10px #383554;
   padding: 20px;
 }
 
-/* line 36, ../sass/_richardsoneats.sass */
+/* line 57, ../sass/_richardsoneats.sass */
 .card-title h2 {
   font-size: 2.5rem;
   font-weight: 900;
   font-family: "Ovo", serif;
 }
-/* line 40, ../sass/_richardsoneats.sass */
+/* line 61, ../sass/_richardsoneats.sass */
 .card-title .pin img {
   height: 31px;
   width: 31px;
@@ -134,14 +163,14 @@ body {
   margin: -20px -20px 0 0;
   transition: all 0.4s ease;
 }
-/* line 47, ../sass/_richardsoneats.sass */
+/* line 68, ../sass/_richardsoneats.sass */
 .card-title .hr {
   width: 30px;
   height: 3px;
   background-color: #FCCE3E;
   margin: 10px 0;
 }
-/* line 52, ../sass/_richardsoneats.sass */
+/* line 73, ../sass/_richardsoneats.sass */
 .card-title h3 {
   font-family: "Quattrocento Sans", sans-serif;
   text-transform: uppercase;
@@ -149,7 +178,7 @@ body {
   color: #B1B1B1;
 }
 
-/* line 57, ../sass/_richardsoneats.sass */
+/* line 78, ../sass/_richardsoneats.sass */
 .card-description {
   font-size: 1.2rem;
   margin: 25px 0 30px;
@@ -157,7 +186,7 @@ body {
   line-height: 1.4;
 }
 
-/* line 63, ../sass/_richardsoneats.sass */
+/* line 84, ../sass/_richardsoneats.sass */
 .card-order h3 {
   font-family: "Quattrocento Sans", sans-serif;
   text-transform: uppercase;
@@ -165,20 +194,57 @@ body {
   color: #B1B1B1;
   margin-bottom: 10px;
 }
-/* line 69, ../sass/_richardsoneats.sass */
+/* line 90, ../sass/_richardsoneats.sass */
 .card-order ul {
   list-style-type: disc;
   list-style-position: outside;
 }
-/* line 72, ../sass/_richardsoneats.sass */
+/* line 93, ../sass/_richardsoneats.sass */
 .card-order li {
   margin: 0 0 8px 30px;
   font-family: "Ovo", serif;
   font-size: 1.1rem;
 }
 
+/* line 99, ../sass/_richardsoneats.sass */
+.card-form h1 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-family: "Ovo", serif;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+/* line 105, ../sass/_richardsoneats.sass */
+.card-form .form-group {
+  margin: 0 0 25px 0;
+}
+/* line 107, ../sass/_richardsoneats.sass */
+.card-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+/* line 111, ../sass/_richardsoneats.sass */
+.card-form input, .card-form textarea {
+  display: block;
+  width: 90%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
 @media (max-width: 475px) {
-  /* line 80, ../sass/_richardsoneats.sass */
+  /* line 132, ../sass/_richardsoneats.sass */
   .card-container {
     padding: 1rem;
   }

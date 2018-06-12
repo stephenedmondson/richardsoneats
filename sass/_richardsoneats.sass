@@ -6,6 +6,27 @@ body
   background-image: -webkit-linear-gradient(bottom left, #764BA2 0%, #667EEA 100%)
   background-image: -o-linear-gradient(bottom left, #764BA2 0%, #667EEA 100%)
   background-image: linear-gradient(to top right, #764BA2 0%, #667EEA 100%)
+
+.header-container
+  display: grid
+  padding: 5rem
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+  grid-gap: 0
+  padding-bottom: 0
+  .card
+    background-color: rgba(60, 56, 117, 0.45)
+  h1
+    font-size: 1.75rem
+    font-weight: 900
+    font-family: $font-serif
+    line-height: 2.2rem
+    color: white
+    a
+      color: #FCCE3E
+    em
+      font-style: italic
+
+
 .card-container
   display: grid
   padding: 5rem
@@ -73,6 +94,37 @@ body
     margin: 0 0 8px 30px
     font-family: $font-serif
     font-size: 1.1rem
+
+.card-form
+  h1
+    font-size: 1.75rem
+    font-weight: 900
+    font-family: $font-serif
+    line-height: 2.2rem
+    margin-bottom: 20px
+  .form-group
+    margin: 0 0 25px 0
+  label
+    display: block
+    margin-bottom: 5px
+    font-family: $font-sans
+  input, textarea
+    display: block
+    width: 90%
+    padding: 0.375rem 0.75rem
+    font-size: 1rem
+    line-height: 1.5
+    color: #495057
+    background-color: #fff
+    background-clip: padding-box
+    border: 1px solid #ced4da
+    border-radius: 0.25rem
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+    padding: 0.5rem 1rem
+    font-size: 1.25rem
+    line-height: 1.5
+    border-radius: 0.3rem
+
 
 
 
