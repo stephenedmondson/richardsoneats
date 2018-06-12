@@ -96,12 +96,16 @@ body {
   transition: all 0.3s ease;
 }
 /* line 18, ../sass/_richardsoneats.sass */
-.card-link:hover {
+.card-link .card {
+  transition: all 0.3s ease;
+}
+/* line 20, ../sass/_richardsoneats.sass */
+.card-link .card:hover {
   box-shadow: 0 0 30px -6px #383554;
   transform: translateY(-3px);
 }
-/* line 21, ../sass/_richardsoneats.sass */
-.card-link:hover .pin img {
+/* line 23, ../sass/_richardsoneats.sass */
+.card-link .card:hover .pin img {
   height: 35px;
   width: 35px;
   float: right;
@@ -109,20 +113,20 @@ body {
   transition: all 0.4s ease;
 }
 
-/* line 29, ../sass/_richardsoneats.sass */
+/* line 31, ../sass/_richardsoneats.sass */
 .card {
   background: #FDFDFD;
   box-shadow: 0 0 34px -10px #383554;
   padding: 20px;
 }
 
-/* line 34, ../sass/_richardsoneats.sass */
+/* line 36, ../sass/_richardsoneats.sass */
 .card-title h2 {
   font-size: 2.5rem;
   font-weight: 900;
   font-family: "Ovo", serif;
 }
-/* line 38, ../sass/_richardsoneats.sass */
+/* line 40, ../sass/_richardsoneats.sass */
 .card-title .pin img {
   height: 31px;
   width: 31px;
@@ -130,14 +134,14 @@ body {
   margin: -20px -20px 0 0;
   transition: all 0.4s ease;
 }
-/* line 45, ../sass/_richardsoneats.sass */
+/* line 47, ../sass/_richardsoneats.sass */
 .card-title .hr {
   width: 30px;
   height: 3px;
   background-color: #FCCE3E;
   margin: 10px 0;
 }
-/* line 50, ../sass/_richardsoneats.sass */
+/* line 52, ../sass/_richardsoneats.sass */
 .card-title h3 {
   font-family: "Quattrocento Sans", sans-serif;
   text-transform: uppercase;
@@ -145,7 +149,7 @@ body {
   color: #B1B1B1;
 }
 
-/* line 55, ../sass/_richardsoneats.sass */
+/* line 57, ../sass/_richardsoneats.sass */
 .card-description {
   font-size: 1.2rem;
   margin: 25px 0 30px;
@@ -153,7 +157,7 @@ body {
   line-height: 1.4;
 }
 
-/* line 61, ../sass/_richardsoneats.sass */
+/* line 63, ../sass/_richardsoneats.sass */
 .card-order h3 {
   font-family: "Quattrocento Sans", sans-serif;
   text-transform: uppercase;
@@ -161,12 +165,12 @@ body {
   color: #B1B1B1;
   margin-bottom: 10px;
 }
-/* line 67, ../sass/_richardsoneats.sass */
+/* line 69, ../sass/_richardsoneats.sass */
 .card-order ul {
   list-style-type: disc;
   list-style-position: outside;
 }
-/* line 70, ../sass/_richardsoneats.sass */
+/* line 72, ../sass/_richardsoneats.sass */
 .card-order li {
   margin: 0 0 8px 30px;
   font-family: "Ovo", serif;
@@ -174,7 +178,7 @@ body {
 }
 
 @media (max-width: 475px) {
-  /* line 78, ../sass/_richardsoneats.sass */
+  /* line 80, ../sass/_richardsoneats.sass */
   .card-container {
     padding: 1rem;
   }
