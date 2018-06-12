@@ -1,0 +1,79 @@
+html, body
+  height: 100%
+  width: 100%
+body
+  background: fixed
+  background-image: -webkit-linear-gradient(bottom left, #764BA2 0%, #667EEA 100%)
+  background-image: -o-linear-gradient(bottom left, #764BA2 0%, #667EEA 100%)
+  background-image: linear-gradient(to top right, #764BA2 0%, #667EEA 100%)
+.card-container
+  display: grid
+  padding: 5rem
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+  grid-gap: 2rem
+.card-link
+  text-decoration: none
+  color: inherit
+  transition: all 0.3s ease
+  &:hover
+    box-shadow: 0 0 30px -6px #383554
+    transform: translateY(-3px)
+    .pin img
+      height: 35px
+      width: 35px
+      float: right
+      margin: -20px -20px 0 0
+      transition: all 0.4s ease
+
+
+.card
+  background: #FDFDFD
+  box-shadow: 0 0 34px -10px #383554
+  padding: 20px
+.card-title
+  h2
+    font-size: 2.5rem
+    font-weight: 900
+    font-family: $font-serif
+  .pin img
+    height: 31px
+    width: 31px
+    float: right
+    margin: -20px -20px 0 0
+    transition: all 0.4s ease
+
+  .hr
+    width: 30px
+    height: 3px
+    background-color: #FCCE3E
+    margin: 10px 0
+  h3
+    font-family: $font-sans
+    text-transform: uppercase
+    font-size: 1rem
+    color: #B1B1B1
+.card-description
+  font-size: 1.2rem
+  margin: 25px 0 30px
+  font-family: $font-serif
+  line-height: 1.4
+.card-order
+  h3
+    font-family: $font-sans
+    text-transform: uppercase
+    font-size: 1rem
+    color: #B1B1B1
+    margin-bottom: 10px
+  ul
+    list-style-type: disc
+    list-style-position: outside
+  li
+    margin: 0 0 8px 30px
+    font-family: $font-serif
+    font-size: 1.1rem
+
+
+
+@media (max-width: 475px)
+  .card-container
+    padding: 1rem
