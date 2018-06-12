@@ -245,7 +245,7 @@ body {
 
 @media (max-width: 475px) {
   /* line 132, ../sass/_richardsoneats.sass */
-  .card-container {
+  .card-container, .header-container {
     padding: 1rem;
   }
 }
